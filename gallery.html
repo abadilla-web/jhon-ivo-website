@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="gallery.css" />
+    <script src="script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Abadilla<span>Web</span></h1>
+      <nav>
+        <div onclick="toggleNav()" class="burger">
+          <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+        <ul id="menu">
+          <li>
+            <a href="file:///C:/Users/User/Desktop/jhonbobo%20vlog/index.html"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="file:///C:/Users/User/Desktop/jhonbobo%20vlog/About.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="file:///C:/Users/User/Desktop/jhonbobo%20vlog/services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              class="Active"
+              href="file:///C:/Users/User/Desktop/jhonbobo%20vlog/gallery.html"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a href="file:///C:/Users/User/Desktop/jhonbobo%20vlog/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="gallery">
+      <div class="gallery-heading">Gallery</div>
+      <div class="gallery-container row1">
+        <div class="img-card">
+          <img src="proj1.png" alt="" title="My recent web design work" />
+        </div>
+        <div class="img-card">
+          <img
+            src="proj2.png"
+            alt=""
+            title="My recent portfolio webpage project"
+          />
+        </div>
+        <div class="img-card">
+          <img src="proj3.jpg" alt="" title="My recent web design work" />
+        </div>
+      </div>
+      <div class="gallery-container row2">
+        <div class="img-card">
+          <img
+            src="game development.jfif"
+            alt=""
+            title="My recent web design work"
+          />
+        </div>
+        <div class="img-card">
+          <img
+            src="appdev.jpg"
+            alt=""
+            title="My recent mobile app design work"
+          />
+        </div>
+        <div class="img-card">
+          <img
+            src="backenddev.avif"
+            alt=""
+            title="My recent backend development project"
+          />
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

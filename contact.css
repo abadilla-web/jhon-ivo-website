@@ -1,0 +1,527 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overflow: hidden;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #070707;
+  color: #fcf6f6;
+}
+
+header {
+  background-color: #110d0d;
+  color: #fcf6f6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1cm;
+  padding-right: 1cm;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.burger {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger ion-icon {
+  font-size: 24px;
+}
+span {
+  color: cyan;
+}
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: cyan;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+.Active {
+  background-color: cyan;
+  color: rgb(14, 13, 13);
+  height: fit-content;
+  width: fit-content;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+  width: 100%;
+  padding: 30px;
+}
+
+.up {
+  height: 12vh;
+  width: max-content;
+  border: 2px solid cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40px;
+}
+
+.follow-container {
+  height: 100%;
+  width: 40%;
+
+  display: flex;
+  align-items: center;
+  gap: 2vh;
+  justify-content: end;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+
+  padding-right: 3vh;
+  padding-left: 3vh;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.follow-container:hover {
+  transform: scale(1.07);
+}
+
+.follow-icon ion-icon {
+  font-size: 62px;
+  color: cyan;
+}
+
+.follow-text {
+  font-size: 32px;
+  color: cyan;
+  cursor: pointer;
+}
+
+.gmail-container {
+  padding-left: 4vh;
+  height: 100%;
+  width: 100%;
+  background: cyan;
+  display: flex;
+  gap: 1vh;
+  align-items: center;
+  padding: 10px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.gmail-container:hover {
+  transform: scale(1.07);
+}
+
+.mail-icon i {
+  font-size: 62px;
+  color: black;
+  margin-left: 3vh;
+}
+
+.gmail {
+  font-size: 32px;
+  color: black;
+}
+
+.down {
+  height: 20vh;
+  width: 100%;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 6vh;
+}
+
+.social-icon a {
+  height: 90px;
+  width: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: cyan;
+  transition: 0.5s;
+}
+
+.social-icon a:hover {
+  transform: scale(1.1);
+}
+
+.social-icon a:active {
+  opacity: 0.6;
+}
+
+.social-icon a i {
+  font-size: 62px;
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger ion-icon {
+    font-size: 24px;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.822);
+    flex-direction: column;
+    z-index: 4;
+    list-style: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #070707;
+  }
+
+  nav ul li {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    padding: 5%;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+  }
+  section {
+    padding: 0;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project h3 {
+    margin-bottom: 5px;
+  }
+
+  .project p {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .up {
+    height: fit-content;
+    width: 100%;
+    border: 2px solid cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+
+    flex-direction: column;
+  }
+
+  .follow-container {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    justify-content: end;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    padding-right: 3vh;
+    padding-left: 3vh;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .follow-container:hover {
+    transform: scale(1.07);
+  }
+
+  .follow-icon ion-icon {
+    font-size: 62px;
+    color: cyan;
+  }
+
+  .follow-text {
+    font-size: 32px;
+    color: cyan;
+    cursor: pointer;
+  }
+
+  .gmail-container {
+    padding-left: 4vh;
+    height: 100%;
+    width: 100%;
+    background: cyan;
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .gmail-container:hover {
+    transform: scale(1.07);
+  }
+
+  .mail-icon i {
+    font-size: 48px;
+    color: black;
+    margin-left: 3vh;
+  }
+
+  .gmail {
+    font-size: 26px;
+    color: black;
+  }
+
+  .down {
+    height: 20vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6vh;
+  }
+
+  .social-icon {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+    height: fit-content;
+  }
+  .social-icon a {
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: cyan;
+    transition: 0.5s;
+  }
+
+  .social-icon a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icon a:active {
+    opacity: 0.6;
+  }
+
+  .social-icon a i {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  section {
+    padding: 0;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project h3 {
+    margin-bottom: 5px;
+  }
+
+  .project p {
+    margin-bottom: 10px;
+  }
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    padding: 5%;
+  }
+
+  .up {
+    height: fit-content;
+    width: 100%;
+    border: 2px solid cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 40px;
+
+    flex-direction: column;
+  }
+
+  .follow-container {
+    height: 100%;
+    width: 40%;
+
+    display: flex;
+    align-items: center;
+    gap: 2vh;
+    justify-content: end;
+    border-top-left-radius: 40px;
+    border-bottom-left-radius: 40px;
+
+    padding-right: 3vh;
+    padding-left: 3vh;
+    cursor: pointer;
+    transition: 0.5s;
+  }
+
+  .follow-container:hover {
+    transform: scale(1.07);
+  }
+
+  .follow-icon ion-icon {
+    font-size: 32px;
+    color: cyan;
+  }
+
+  .follow-text {
+    font-size: 22px;
+    color: cyan;
+    cursor: pointer;
+  }
+
+  .gmail-container {
+    padding-left: 4vh;
+    height: 100%;
+    width: 100%;
+    background: cyan;
+    display: flex;
+    gap: 1vh;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .gmail-container:hover {
+    transform: scale(1.07);
+  }
+
+  .mail-icon i {
+    font-size: 32px;
+    color: black;
+    margin-left: 3vh;
+  }
+
+  .gmail {
+    font-size: 20px;
+    color: black;
+  }
+
+  .down {
+    height: 20vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 6vh;
+  }
+
+  .social-icon a {
+    height: 90px;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: cyan;
+    transition: 0.5s;
+  }
+
+  .social-icon a:hover {
+    transform: scale(1.1);
+  }
+
+  .social-icon a:active {
+    opacity: 0.6;
+  }
+
+  .social-icon a i {
+    font-size: 20px;
+  }
+}

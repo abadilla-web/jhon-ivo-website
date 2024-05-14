@@ -1,0 +1,256 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #070707;
+  color: #fcf6f6;
+}
+
+header {
+  background-color: #110d0d;
+  color: #fcf6f6;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1cm;
+  padding-right: 1cm;
+}
+
+header h1 {
+  margin: 0;
+  color: white;
+  display: flex;
+  justify-content: center;
+}
+span {
+  color: cyan;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+.burger ion-icon {
+  font-size: 24px;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: cyan;
+  cursor: pointer;
+  margin-left: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+}
+
+section {
+  padding: 20px;
+}
+
+.project {
+  margin-bottom: 20px;
+}
+
+.project h3 {
+  margin-bottom: 5px;
+}
+
+.project p {
+  margin-bottom: 10px;
+}
+
+.Active {
+  background-color: cyan;
+  color: rgb(14, 13, 13);
+  height: 10px;
+  width: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 20px;
+}
+.home {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10%;
+}
+
+.image-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46%;
+  height: fit-content;
+  padding: 20px;
+}
+img {
+  width: 83%;
+  border-radius: 50%;
+}
+
+.text-section {
+  width: 53%;
+  height: fit-content;
+  font-size: 30px;
+  color: rgb(211, 55, 141);
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  justify-content: center;
+}
+.text-section span {
+  font-size: 18px;
+  color: white;
+}
+
+.details {
+  font-size: 18px;
+  color: white;
+  text-align: justify;
+  width: 100%;
+}
+
+@media screen and (max-width: 800px) {
+  .burger {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .burger ion-icon {
+    font-size: 24px;
+  }
+
+  nav ul {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 70%;
+    height: 100%;
+    background-color: rgba(10, 10, 10, 0.822);
+    flex-direction: column;
+    z-index: 4;
+    list-style: none;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: #070707;
+  }
+
+  nav ul li {
+    display: flex;
+    margin-right: 20px;
+    flex-direction: column;
+    width: 90%;
+    height: fit-content;
+    padding: 5%;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: cyan;
+    cursor: pointer;
+    margin-left: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+  }
+
+  section {
+    padding: 0;
+  }
+
+  .project {
+    margin-bottom: 20px;
+  }
+
+  .project h3 {
+    margin-bottom: 5px;
+  }
+
+  .project p {
+    margin-bottom: 10px;
+  }
+
+  .Active {
+    background-color: cyan;
+    color: rgb(14, 13, 13);
+    height: fit-content;
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 20px;
+  }
+  .home {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    padding: 10%;
+    position: relative;
+  }
+
+  .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 67%;
+    padding: 20px;
+  }
+  img {
+    width: 400px;
+    border-radius: 50%;
+  }
+
+  .text-section {
+    width: 100%;
+    height: 33%;
+    font-size: 30px;
+    color: rgb(211, 55, 141);
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .text-section span {
+    font-size: 18px;
+    color: white;
+  }
+
+  .details {
+    font-size: 14px;
+    color: white;
+    text-align: justify;
+    width: 100%;
+  }
+}
