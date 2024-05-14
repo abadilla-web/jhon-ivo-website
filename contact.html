@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="contact.css" />
+    <script src="script.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <h1>Abadilla<span>Web</span></h1>
+      <nav>
+        <div onclick="toggleNav()" class="burger">
+          <ion-icon name="menu-sharp"></ion-icon>
+        </div>
+        <ul id="menu">
+          <li>
+            <a
+              class="Active"
+              href="https://abadilla-web.github.io/jhon-ivo-website/"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="https://abadilla-web.github.io/jhon-ivo-website/About.html"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://abadilla-web.github.io/jhon-ivo-website/services.html"
+              >Services</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://abadilla-web.github.io/jhon-ivo-website/gallery.html"
+              >Gallery</a
+            >
+          </li>
+          <li>
+            <a
+              class="Active"
+              href="https://abadilla-web.github.io/jhon-ivo-website/contact.html"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="contact">
+      <div class="up">
+        <div class="follow-container" id="follow-container">
+          <div class="follow-icon"><ion-icon name="person-add"></ion-icon></div>
+          <div class="follow-text">Follow</div>
+        </div>
+        <div class="gmail-container" id="gmail-container">
+          <div class="mail-icon"><i class="bx bxl-gmail"></i></div>
+          <div class="gmail">@azaza.0990abadilla</div>
+        </div>
+      </div>
+      <div class="down">
+        <div class="social-icon">
+          <a
+            href="https://www.youtube.com/channel/UCinjlIwbsPuZqY7Omi66VEQ"
+            title="subscribe to my channel"
+            ><i class="bx bxl-youtube"></i
+          ></a>
+        </div>
+        <div class="social-icon">
+          <a
+            href="https://www.facebook.com/jhonbo.abadilla"
+            title="visit my facebook"
+            ><i class="bx bxl-facebook-square"></i
+          ></a>
+        </div>
+        <div class="social-icon">
+          <a href="www.twitter.com" title="visit my twitter account"
+            ><i class="bx bxl-twitter"></i
+          ></a>
+        </div>
+        <div class="social-icon">
+          <a
+            href="https://www.tiktok.com/@jhonivo17"
+            title="follow me on tiktok"
+            ><i class="bx bxl-tiktok"></i
+          ></a>
+        </div>
+        <div class="social-icon">
+          <a
+            href="https://www.instagram.com/abadillajhonivo/"
+            title="visit my instagram account"
+            ><i class="bx bxl-instagram-alt"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <script>
+      // Get the follow container element
+      var followContainer = document.getElementById("follow-container");
+      var gmailContainer = document.getElementById("gmail-container");
+
+      // Add a click event listener
+      followContainer.addEventListener("click", function () {
+        // Define the URL of the external link
+        var externalLink = "https://www.facebook.com/jhonbo.abadilla"; // Replace 'https://example.com' with your desired external link
+
+        // Open the external link in a new tab
+        window.open(externalLink, "_blank");
+      });
+
+      gmailContainer.addEventListener("click", function () {
+        // Define the URL of the external link
+        var externalLink =
+          "https://mail.google.com/mail/u/0/#inbox?compose=new"; // Replace 'https://example.com' with your desired external link
+
+        // Open the external link in a new tab
+        window.open(externalLink, "_blank");
+      });
+    </script>
+  </body>
+</html>
